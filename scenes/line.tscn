@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ctfx4q645fxo"]
+
+[ext_resource type="Texture2D" uid="uid://b3jchn0artiyt" path="res://graphics/objects/line.png" id="1_pdjlr"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xwu71"]
+a = Vector2(0, -3)
+b = Vector2(-26, -8)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_t6idy"]
+a = Vector2(26, -8)
+b = Vector2(0, -3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cc21m"]
+size = Vector2(3, 15)
+
+[node name="line" type="StaticBody2D" unique_id=503455049]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1801349732]
+texture = ExtResource("1_pdjlr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=123575472]
+shape = SubResource("SegmentShape2D_xwu71")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1294769396]
+shape = SubResource("SegmentShape2D_t6idy")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1484618217]
+position = Vector2(-25.5, -1)
+shape = SubResource("RectangleShape2D_cc21m")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=681200397]
+position = Vector2(25.5, -1)
+shape = SubResource("RectangleShape2D_cc21m")

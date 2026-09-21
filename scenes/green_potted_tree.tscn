@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://vtmr4rwg13mt"]
+
+[ext_resource type="Texture2D" uid="uid://boj6kq1t4mduj" path="res://graphics/objects/tree potted.png" id="1_1kdi8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6idy"]
+size = Vector2(10, 21)
+
+[node name="green_potted_tree" type="StaticBody2D" unique_id=750394587]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=178708470]
+texture = ExtResource("1_1kdi8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1296550391]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_t6idy")
